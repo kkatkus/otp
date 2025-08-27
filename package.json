@@ -1,0 +1,48 @@
+{
+  "name": "@kkatkus/otp",
+  "version": "0.0.1",
+  "description": "One time password input component",
+  "keywords": [
+    "react",
+    "otp",
+    "One time password",
+    "input",
+    "component"
+  ],
+  "author": "Kęstutis Katkus",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "vitest --run",
+    "coverage": "vitest --run --coverage",
+    "build": "rollup -c"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/react": "^19.1.11",
+    "rollup": "4.49.0",
+    "rollup-plugin-dts": "^6.2.3",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkatkus/otp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kkatkus/otp/issues"
+  },
+  "homepage": "https://github.com/kkatkus/otp#readme"
+}
