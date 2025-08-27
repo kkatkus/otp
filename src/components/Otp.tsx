@@ -1,7 +1,13 @@
-import React, { useState, KeyboardEvent, ClipboardEvent, ChangeEvent, useEffect } from 'react';
+import React, {
+  useState,
+  KeyboardEvent,
+  ClipboardEvent,
+  ChangeEvent,
+  useEffect,
+  HTMLAttributes,
+  ForwardedRef,
+} from 'react';
 import styled from '@emotion/styled';
-
-import { type OtpProps } from './index.d';
 
 const Styled = styled.div`
   .otp {
@@ -20,6 +26,11 @@ const Styled = styled.div`
   }
 `;
 
+export interface OtpProps extends Omit<HTMLAttributes<HTMLInputElement>, 'ref'> {
+  name: string;
+  value: string;
+  ref?: ForwardedRef<HTMLInputElement>;
+}
 export default function Otp({ id, name, value, className, style, onChange, ref, ...props }: OtpProps) {
   const [otpArr, setOtpArr] = useState<string[]>([]);
 
