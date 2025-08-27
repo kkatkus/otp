@@ -1,1 +1,1 @@
-export { default } from './otp';
+export { default as Otp } from './otp';
